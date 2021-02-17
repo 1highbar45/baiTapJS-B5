@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-6 cta">
+                <h1 class="text-center">Quản lý tuyển sinh</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="diemChuan">Điểm chuẩn</label>
+                        <input type="text" class="form-control" id="diemChuan">
+                    </div>
+                    <div class="form-group">
+                        <label for="diem1">Điểm môn thứ nhất</label>
+                        <input type="text" class="form-control" id="diem1">
+                    </div>
+                    <div class="form-group">
+                        <label for="diem2">Điểm môn thứ hai</label>
+                        <input type="text" class="form-control" id="diem2">
+                    </div>
+                    <div class="form-group">
+                        <label for="diem3">Điểm môn thứ ba</label>
+                        <input type="text" class="form-control" id="diem3">
+                    </div>
+                    <!-- C1: đổi type submit sang type button  -->
+
+                    <div class="form-group">
+                        <label for="khuVuc">Chọn khu vực ưu tiên</label>
+                        <select class="form-control" id="khuVuc">
+                            <option value="0">X (Không thuộc khu vực ưu tiên)</option>
+                            <option value="2">Khu vực A</option>
+                            <option value="1">Khu vực B</option>
+                            <option value="0.5">Khu vực C</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="doiTuong">Chọn đối tượng ưu tiên</label>
+                        <select class="form-control" id="doiTuong">
+                            <option value="0">0 (Không thuộc đối tượng ưu tiên)</option>
+                            <option value="2.5">Đối tượng 1</option>
+                            <option value="1.5">Đối tượng 2</option>
+                            <option value="1">Đối tượng 3</option>
+                        </select>
+                    </div>
+
+                    <button id="tinhDiem" type="button" class="btn btn-primary">Tính điểm</button>
+                    <p id="ketQua" class="alert alert-success"></p>
+
+                </form>
+            </div>
+
+            <div class="col-6">
+                <h1 class="text-center">Tính tiền điện</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="ten">Tên</label>
+                        <input type="text" class="form-control" id="ten">
+                    </div>
+                    <div class="form-group">
+                        <label for="soKW">Số kW tiêu thụ</label>
+                        <input type="text" class="form-control" id="soKW">
+                    </div>
+                    
+                    <button id="tinhTien" type="button" class="btn btn-primary">Hóa đơn</button>
+                    <p id="hoaDon" class="alert alert-success"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- MAIN JS  -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
